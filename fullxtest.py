@@ -1,7 +1,9 @@
+### fullXtest - python code to run passive/active reconnaisance on a single target and compile results into reports ###
+### by 404TeamNotFound ###
+
 import os
 import time
 import sys
-
 hostname=sys.argv[0] #set variable from cli argument
 run="'-c run'" #set variable to run the recon-ng exploit
 os.system("./recon-cli -w pentest -m recon/domains-hosts/hackertarget -c 'options set source "

@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700" rel="stylesheet">
+    <link href="index.js" rel="script">
+    <link href="layout.css" rel="stylesheet">
+    <title>Login_popup</title>
+</head>
+<body>
+<section class="popup-graybox">
+    <div class="login-popup-sec">
+        <div class="login-content">
+            <h2 data-edit="text">FullxTest</h2>
+            <ul>
+                <li>
+                    <label>
+                        <input type="text"
+                               placeholder="Enter IP"
+                               id="ip">
+                    </label>
+                </li>
+                <li>
+                    <button id="submitButton" class="login-btn"
+                            onclick="getIP()">Enter
+                    </button>
+                </li>
+                <script>
+                    let address;
+
+                    function getIP() {
+                        //getting user input
+                        address = document.getElementById("ip").value;
+                        //  alert(address);
+
+                    }
+                </script>
+                <script>
+                    var myScript = 'fullxtes.py'; // scripn variable
+                    var Pythonshell = require('python-shell');
+                    var pyshell = new Pythonshell(myScript, mode);
+                    var options = {
+                        mode: 'text',
+                        pythonPath: '<-path to python',
+                        scriptPath: :
+                    }
+
+                    pyshell.on('message', function (message) {
+                        console.log(message);
+
+                    });
+                    pyshell.end(function (error) {
+                        if(error){
+                            throw error;
+                        }
+                    console.log('test')
+
+                    });
+                    let shell = new PythonShell('fullxtest.py', options);
+                    PythonShell.defaultOptions = {scriptPath, '../s'}
+                </script>
+            </ul>
+        </div>
+    </div>
+</section>
+</body>
+</html>

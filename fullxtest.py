@@ -16,10 +16,8 @@ os.system("nmap -A --script vuln --reason {} -oX nmap.xml".format(hostname))
 os.system("xsltproc nmap.xml -o nmap.html")
 os.system("ls -la")
 
-# fullXtest - a web-based, javascript and python powered automated penetration testing tool
+# fullXtest - passive/active recon + reporting
 # created by 404TeamNotFound
-
-
 
 
 

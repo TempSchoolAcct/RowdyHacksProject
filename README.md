@@ -1,4 +1,4 @@
-# RowdyHacksProject
--
+# Project FullxTest
+# By 404TeamNotFound
 
-This is the repository for Project FullxTest
+Project FullxTest is a website that takes a given IP address and runs passive and active PenTesting programs against it and generates a report based on the findings.
